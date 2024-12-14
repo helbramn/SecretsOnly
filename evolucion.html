@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Página | SecretsOnly</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="banner.jpg" alt="Logo SecretsOnly" class="logo">
+        </div>
+    </header>
+
+    <div class="menu-container">
+        <button class="menu-button">Menú</button>
+        <ul class="menu-dropdown">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="servicios.html">Nuestros Servicios</a></li>
+            <li><a href="evolucion.html">Evolución</a></li>
+        </ul>
+    </div>
+
+        <!-- Contenido de la nueva página -->
+        <main>
+        <section class="evolucion" id="evolucion">
+            <section class="exito-modelos">
+                <h1>El éxito de nuestras modelos en SecretsOnly</h1>
+                <p>
+                    Siempre garantizamos una evolución del 25% en el primer trimestre siendo así el objetivo mínimo que garantizamos. 
+                    Aquí puedes observar cómo hacemos que nuestra modelo pase de 0.00€  a 10,342.35€  en 28 días aumentando su facturación potencialmente.
+                </p>
+                <div class="imagen-resultado carrusel">
+                    <button class="prev">‹</button>
+                    <img src="nevol1.png" alt="Estadísticas 1" class="active">
+                    <img src="nevol2.png" alt="Estadísticas 2">
+                    <img src="nevol3.png" alt="Estadísticas 3">
+                    <img src="nevol4.png" alt="Estadísticas 4">
+                    <button class="next">›</button>
+                </div>
+                
+            </section>
+
+            <section class="exito-financiero">
+                <h2>El camino hacia el éxito financiero</h2>
+                <p>
+                    Nuestro equipo en Madrid se dedica a brindar un servicio excepcional para optimizar las cuentas de OnlyFans de nuestras modelos. 
+                    Gracias a nuestra estrategia personalizada, muchas de ellas han experimentado un impresionante aumento del 25% en sus ganancias mensuales.
+                </p>
+            </section>
+
+            <section class="cta-parte">
+                <h2>¿Quieres ser parte de nuestro éxito?</h2>
+                <p>
+                    Si deseas aumentar tus ingresos mensuales y maximizar tu presencia en línea, contáctanos ahora! Estamos aquí para ayudarte 
+                    a alcanzar tus metas financieras con nuestro servicio de gestión de redes sociales.
+                </p>
+                <a href="#contacto" class="cta-button">Contáctanos</a>
+            </section>
+        </section>
+        </main>
+
+<!-- Sección de Contacto -->
+<section id="contacto" class="contacto">
+    <div class=  "contacto-formulario">
+        <h3>Contáctanos</h3>
+        <p>¡Contáctanos para potenciar tu presencia en redes sociales y aumentar tu economía! Estamos aquí para ayudarte.</p>
+        <form action="https://formsubmit.co/ 774529d7f9295b11519c3ca639791352" method="post">
+            <label for="nombre">Nombre *</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Dirección de correo electrónico *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar formulario</button>
+        </form>
+    </div>
+    
+    <div class="contacto-ubicacion">
+        <h3>Ubicación</h3>
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-3.724174499511719%2C40.44191758970981%2C-3.717985153198242%2C40.448645223997986&layer=mapnik" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p>SecretsOnly<br>Moncloa-Madrid España</p>
+    </div>
+</section>
+
+<!-- Pie de página -->
+<hr class="divider">
+<footer class="footer">
+    <div class="footer-content">
+    <p>© 2024 SecretsOnly</p>
+    <div class="social-icons">
+        <a href="https://x.com/OnlysecretsOFF"><img src="twitter.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com/onlysecretsthemanageragency?igsh=MXA4cWM2eWk0YW5reg== "><img src="instagram.png" alt="Instagram"></a>
+        <a href="https://www.tiktok.com/@onlysecrets_esp?is_from_webapp=1&sender_device=pc "><img src="tiktok.png" alt="Tiktok"></a>
+    </div>
+    </div>
+</footer>
+
+
+
+
+
+    <script>
+        // Menú desplegable
+        document.querySelector('.menu-button').addEventListener('click', () => {
+            const menu = document.querySelector('.menu-dropdown');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        });
+
+        const images = document.querySelectorAll(".carrusel img");
+const prevButton = document.querySelector(".carrusel .prev");
+const nextButton = document.querySelector(".carrusel .next");
+
+let currentIndex = 0;
+
+// Función para mostrar la imagen activa
+function showImage(index) {
+    images.forEach((img, i) => {
+        img.classList.toggle("active", i === index);
+    });
+}
+
+// Navegar a la imagen anterior
+prevButton.addEventListener("click", () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+    showImage(currentIndex);
+});
+
+// Navegar a la siguiente imagen
+nextButton.addEventListener("click", () => {
+    currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+    showImage(currentIndex);
+});
+
+// Inicializar el carrusel con la primera imagen
+showImage(currentIndex);
+
+    </script>
+</body>
+</html>

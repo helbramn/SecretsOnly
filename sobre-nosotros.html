@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - SecretsOnly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Header con logo -->
+<header>
+    <div class="logo-container">
+        <img src="banner.jpg" alt="Logo SecretsOnly" class="logo">
+    </div>
+</header>
+
+    <!-- Menú desplegable -->
+    <div class="menu-container">
+        <button class="menu-button">Menú</button>
+        <ul class="menu-dropdown">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="servicios.html">Nuestros Servicios</a></li>
+            <li><a href="evolucion.html">Evolución</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenido de la página -->
+    <section id="sobre-nosotros" class="sobre-nosotros">
+        <div class="sobre-nosotros-container">
+            <img src="sobrenosotros.webp" alt="Sobre Nosotros" class="sobre-nosotros-img">
+            <div class="sobre-nosotros-texto">
+                <h1>Sobre Nosotros - SecretsOnly</h1>
+                <p>
+                    SecretsOnly comenzó con la pasión por las redes sociales y la creatividad. Nuestro equipo en Madrid, España, se dedica a llevar el mantenimiento de cuentas OnlyFans, logrando un aumento del 35% en la economía de nuestros clientes. 
+                </p>
+                <p>
+                    Nos enorgullece trabajar con plataformas como INFLOW y OF, brindando un servicio personalizado sin importar la experiencia previa de nuestros clientes. Estamos aquí para impulsar tu crecimiento y éxito en línea.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA (Llamado a la acción) -->
+    <section class="cta">
+        <h2>¿Listo para llevar tu presencia en línea al siguiente nivel?</h2>
+        <p>Contáctanos hoy mismo para descubrir cómo podemos ayudarte a crecer en las redes sociales.</p>
+        <a href="#contacto" class="cta-button">¡Contáctanos ahora!</a>
+    </section>
+
+<!-- Sección de Contacto -->
+<section id="contacto" class="contacto">
+    <div class=  "contacto-formulario">
+        <h3>Contáctanos</h3>
+        <p>¡Contáctanos para potenciar tu presencia en redes sociales y aumentar tu economía! Estamos aquí para ayudarte.</p>
+        <form action="https://formsubmit.co/ 774529d7f9295b11519c3ca639791352" method="post">
+            <label for="nombre">Nombre *</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Dirección de correo electrónico *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar formulario</button>
+        </form>
+    </div>
+    
+    <div class="contacto-ubicacion">
+        <h3>Ubicación</h3>
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-3.724174499511719%2C40.44191758970981%2C-3.717985153198242%2C40.448645223997986&layer=mapnik" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p>SecretsOnly<br>Moncloa-Madrid España</p>
+    </div>
+</section>
+
+  <!-- Pie de página -->
+<hr class="divider">
+<footer class="footer">
+    <div class="footer-content">
+    <p>© 2024 SecretsOnly</p>
+    <div class="social-icons">
+        <a href="https://x.com/OnlysecretsOFF"><img src="twitter.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com/onlysecretsthemanageragency?igsh=MXA4cWM2eWk0YW5reg== "><img src="instagram.png" alt="Instagram"></a>
+        <a href="https://www.tiktok.com/@onlysecrets_esp?is_from_webapp=1&sender_device=pc "><img src="tiktok.png" alt="Tiktok"></a>
+    </div>
+    </div>
+</footer>
+
+
+
+
+    
+    <script>
+        // Menú desplegable
+        document.querySelector('.menu-button').addEventListener('click', () => {
+            const menu = document.querySelector('.menu-dropdown');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>
